@@ -48,12 +48,10 @@ dependencies {
 
 jsweet {
     verbose = true
-    bundle = false
+    bundle = true
     encoding = 'UTF-8'
     sourceMap = true
-    outDir = new File('src/main/resources/META-INF/resources/webjars/' + project.name + '/' + project.version)
-    dtsOut = new File('src/main/resources/META-INF/resources/typings/' + project.name + '/' + project.version)
-    // outDir = new File('build/target/javascript')
+    outDir = new File('build/target/javascript')
     tsOut = new File('build/target/.ts')
     candiesJsOut = new File('build/target/candies')
     targetVersion = 'ES3'

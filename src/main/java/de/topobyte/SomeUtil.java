@@ -1,7 +1,5 @@
 package de.topobyte;
 
-import java.util.Arrays;
-
 public class SomeUtil
 {
 
@@ -15,10 +13,15 @@ public class SomeUtil
 		return "Hello JSweet";
 	}
 
-	public static void sortSomething()
+	public static String returnMore()
 	{
-		String[] someStrings = new String[] { "b", "c", "a" };
-		Arrays.sort(someStrings);
+		StringBuilder buffer = new StringBuilder();
+		buffer.append(1);
+		buffer.append(" asdf ");
+		buffer.append(1.5);
+		buffer.append(" asdf ");
+		buffer.append(true);
+		return buffer.toString();
 	}
 
 }
